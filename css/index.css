@@ -1,0 +1,473 @@
+@font-face {
+    font-family:BebasNeue;
+    src: url(../Fonts/BebasNeue-Regular.ttf);
+
+}
+@font-face {
+    font-family:DMSerif;
+    src: url(../Fonts/DMSerifDisplay-Regular.ttf);
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0;
+    /* Elimina el relleno predeterminado del cuerpo */
+
+    font-size: 16px;
+}
+
+
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #141E46;
+    /* Color de fondo del encabezado */
+    padding: 10px 0;
+    /* Aumenta el espacio superior e inferior del encabezado */
+    text-align: center;
+    /* Alinea el contenido del encabezado al centro */
+    transition: background-color 0.3s;
+    /* Agrega una transición al color de fondo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Asegura que el encabezado esté por encima del contenido */
+
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el encabezado */
+header:hover {
+    background-color: #FFF5E0;
+    /* Color de fondo al pasar el cursor */
+}
+
+/* Contenedor principal con ancho máximo y centrado en la página */
+.container {
+    max-width: 1200px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente en la página */
+    display: flex;
+    /* Usa flexbox para organizar los elementos */
+    justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilos para el título principal */
+h1 {
+    display: inline;
+    /* Hace que el título sea un elemento en línea */
+    color: #FF6969;
+    /* Define el color del texto del título */
+}
+
+/* Estilos para la navegación */
+nav {
+    flex: 1;
+    /* Utiliza el espacio disponible en la navegación */
+    text-align: right;
+    /* Alinea el contenido de la navegación a la derecha */
+}
+
+/* Estilos para la lista no ordenada dentro de la navegación */
+nav ul {
+    list-style: none;
+    /* Elimina los puntos de lista predeterminados */
+    padding: 0;
+    /* Elimina el relleno predeterminado de la lista */
+}
+
+/* Estilos para los elementos de la lista dentro de la navegación */
+nav li {
+    display: inline;
+    /* Hace que los elementos de la lista sean en línea */
+    margin-left: 20px;
+    /* Agrega espacio a la izquierda de los elementos de la lista */
+}
+
+/* Estilos para el menú "Marcas" y su submenú */
+.menu-marcas {
+
+   text-align: start;
+    position: relative;
+    /* Establece una posición relativa para el elemento padre */
+}
+
+/* Estilos para el submenú "Marcas" (oculto por defecto) */
+.submenu-marcas {
+    display: none;
+    /* Oculta el submenú por defecto */
+    position: absolute;
+    /* Establece una posición absoluta para el submenú */
+    top: 100%;
+    /* Coloca el submenú debajo del elemento "Marcas" */
+    left: 0;
+    /* Alinea el submenú con la izquierda del elemento padre */
+    background-color: #FFF5E0;
+    /* Cambia el fondo del submenú */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra al submenú */
+    z-index: 1;
+    /* Asegura que el submenú esté encima de otros elementos */
+    white-space: nowrap;
+    /* Evita el salto de línea dentro del submenú */
+}
+
+/* Mostrar el submenú "Marcas" al pasar el cursor sobre el menú */
+.menu-marcas:hover .submenu-marcas {
+    display: flex;
+    /* Utiliza flexbox para mostrar los elementos en una columna */
+    flex-direction: column;
+    /* Muestra los elementos en una columna */
+}
+
+/* Estilos para los enlaces (links) */
+a {
+    text-decoration: none;
+    /* Elimina la decoración de enlace predeterminada */
+    color: #FF6969;
+    /* Define el color del texto de los enlaces */
+
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 200px;
+    /* Define el ancho de la imagen del logo */
+    float: left;
+    /* Hace que el logo flote a la izquierda */
+}
+
+
+
+/* Estilos CSS para la seccion 1 */
+
+/* Estilos para la sección de marcas */
+.marcas {
+    background-color: #FFF5E0; /* Color de fondo de la sección */
+    padding: 40px 0; /* Espaciado interno de la sección */
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.marcas h1 {
+    text-align: left;
+}
+
+/* Estilos para el contenedor de marcas */
+.marcas .container {
+    display: flex; /* Utiliza flexbox para organizar las marcas en fila */
+    justify-content: space-between; /* Distribuye el espacio entre las marcas */
+}
+
+/* Estilos para cada marca */
+.marca {
+    flex: 1; /* Utiliza el espacio disponible para cada marca */
+    margin: 0 20px; /* Espaciado horizontal entre las marcas */
+    min-width: 200px; /* Tamaño mínimo para cada contenedor de marca */
+}
+
+/* Estilos para las imágenes de las marcas */
+.marca-img {
+    max-width: 100%;
+    transition: transform 0s;
+    transform-origin: center center;
+}
+
+/* Aplica la rotación en 3D al pasar el cursor sobre las imágenes */
+.marca-img:hover {
+    transition: all 1s;
+    transform: rotateY(360deg); /* Rota la imagen alrededor del eje Y (horizontal) */
+}
+
+.carousell {
+    background-color: #FFF5E0;
+}
+
+
+.carousel {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #141E46;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FF6969;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+
+/* Estilos para los títulos de las marcas */
+.marca h2 {
+    margin-top: 10px; /* Espaciado superior para el título */
+    color: #333; /* Color del texto del título */
+}
+
+/* Estilos para el texto descriptivo de las marcas */
+.marca p {
+    margin-top: 10px; /* Espaciado superior para el texto */
+    color: #555; /* Color del texto descriptivo */
+}
+
+/* Estilo para la sección */
+.s3 {
+    background-color: #FFF5E0; /* Color de fondo */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación de texto al centro */
+}
+
+/* Estilo para el texto dentro de la sección */
+.s3 p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 15px; /* Margen inferior */
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Estilo para texto fuerte (strong) */
+.s3 strong {
+    font-weight: bold; /* Negrita */
+    color: #0066cc; /* Color del texto fuerte */
+}
+
+/* Estilo para texto en negrita (b) */
+.s3 b {
+    font-weight: bold; /* Negrita */
+    color: #0066cc; /* Color del texto en negrita */
+}
+
+/* Estilo para los enlaces */
+.s3 a {
+    color: #0066cc; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: text-decoration 0.3s; /* Transición suave de subrayado */
+}
+
+.s3 a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
+  }
+  
+  /* Estilo para el título del pie de página */
+  .texto-pie {
+    font-size: 24px; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
+  }
+  
+  /* Estilo para los iconos de redes sociales */
+  .fa-brands {
+    font-size: 5vw; /* Tamaño de fuente de los íconos */
+    margin: 0 10px; /* Ajusta el margen entre los íconos*/
+    color: #fff; /* Cambia el color de los íconos*/
+  }
+  
+  /* Estilo para la imagen de Instagram */
+  footer img {
+    width: 5vw; /* Ancho de la imagen */
+    margin: 0 10px; /* Ajustar el margen entre la imagen y los íconos*/
+  }
+  
+  footer img:hover{
+    transform: scale(1.05);
+  }
+  /* Cambiar el color de los íconos cuando se les pasa el mouse por encima */
+  .fa-brands:hover {
+    color: #007bff;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px; /* Ajusta el espacio del encabezado en pantallas pequeñas */
+    }
+
+    /* Estilo para el logo en dispositivos móviles */
+    .logo img {
+        width: 150px; /* Reduzca el tamaño del logo en pantallas pequeñas */
+    }
+
+    /* Alinea el título principal y la navegación en dispositivos móviles */
+    h1, nav {
+        text-align: center;
+    }
+
+    /* Estilos para los elementos de la lista en dispositivos móviles */
+    nav li {
+        display: block; /* Muestra los elementos de la lista en bloques */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-top: 10px; /* Agrega espacio superior entre elementos */
+    }
+
+    /* Estilos para el menú "Marcas" en dispositivos móviles */
+    .menu-marcas:hover .submenu-marcas {
+        display: none; /* Oculta el submenú en dispositivos móviles */
+    }
+}
+
+/* Estilo para las imágenes de las marcas en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .marca-img {
+        width: 100%; /* Hace que las imágenes ocupen el ancho completo */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+}
+
+/* Estilo para el pie de página en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .footer-contacto {
+        text-align: center; /* Alinea el contenido al centro */
+    }
+}
+
+/*ajustes del texto de la marca*/
+.tipog{
+    font-family:DMSerif;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 6px;
+}
+
+/*tajustes texto gral */
+p{
+    font-family:BebasNeue;
+}
+
+a{
+    font-family:DMSerif; 
+}
+.texto_chico{ 
+    font-size: 5px
+}

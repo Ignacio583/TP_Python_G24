@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Estilo de Vivir</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="/img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+    <script src="js/index.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+               <a href="index.html"><img src="img/logo2.png" alt="Logo_Web"></a>
+            </div>
+            <a href="index.html"><h1 class="tipog">El Estilo de Vivir</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="menu-marcas">
+                        <a href="#">Marcas</a>
+                        <ul class="submenu-marcas">
+                            <li>
+                                <a href="templates/alfa_romeo.html"><img src="img/logo_alfa_romeo.png" width="15" height="15" alt="Logo Alfa Romeo">  Alfa Romeo</a>
+                            </li>
+                            <li>
+                                <a href="templates/audi.html"><img src="img/logo_audi.png" width="15" height="15" alt="Logo Audi">  Audi</a>
+                            </li>
+                            <li>
+                                <a href="templates/porsche.html"><img src="img/logo_porsche.png" width="15" height="15" alt="Logo Porsche">  Porsche</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="templates/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="marcas">
+        <div class="container">
+            <a href="templates/alfa_romeo.html" class="marca-link">
+                <div class="marca">
+                    <img src="img/logo_alfa_romeo.png" alt="Alfa Romeo" class="marca-img" width="200" height="200">
+                    <h2>Alfa Romeo</h2>
+                    <p>Descubre la elegancia y el rendimiento italiano con nuestros modelos Alfa Romeo.</p>
+                </div>
+            </a>
+            <a href="templates/audi.html" class="marca-link">
+                <div class="marca">
+                    <img src="img/logo_audi.png" alt="Audi" class="marca-img" width="250" height="200">
+                    <h2>Audi</h2>
+                    <p>Experimenta la innovación y tecnología de vanguardia con los vehículos Audi.</p>
+                </div>
+            </a>
+            <a href="templates/porsche.html" class="marca-link">
+                <div class="marca">
+                    <img src="img/logo_porsche.png" alt="Porsche" class="marca-img" width="150" height="200">
+                    <h2>Porsche</h2>
+                    <p>Explora la deportividad y el lujo con los exclusivos automóviles Porsche.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="carousell">
+        <div>
+            <div class="carousel">
+              <ul class="slides">
+                <input type="radio" name="radio-buttons" id="img-1" checked />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="img/audi/etron1.webp">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-3" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-2" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-2" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="img/alfa_romeo/giulia2.jpg">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-1" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-3" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <input type="radio" name="radio-buttons" id="img-3" />
+                <li class="slide-container">
+                  <div class="slide-image">
+                    <img src="img/alfa_romeo/giulia3.webp">
+                  </div>
+                  <div class="carousel-controls">
+                    <label for="img-2" class="prev-slide">
+                      <span>&lsaquo;</span>
+                    </label>
+                    <label for="img-1" class="next-slide">
+                      <span>&rsaquo;</span>
+                    </label>
+                  </div>
+                </li>
+                <div class="carousel-dots">
+                  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+    </section>
+    <section class="s3">
+        <p>
+            <strong>"EL ESTILO DE VIVIR"</strong> es una empresa familiar fundada en 1978. Nuestra tercera generación de vendedores prioriza la satisfacción de nuestros clientes por sobre todas las cosas y estamos orgullosos de ofrecer los mejores precios. </p>
+            
+          <p> Desde nuestros humildes comienzos nuestro objetivo es hacer realidad el deseo de conducir un auto deportivo.</p>
+
+        
+            <p class="texto_chico">
+              Ofrecemos la posibilidad de aceptar su auto como parte del pago. Dependiendo del vehículo y su estado, es posible que podamos aceptarlo como parte de pago.
+            </p>
+          
+            <p>Haz realidad tu sueño de tener un automóvil de alta gama.</p>
+            
+        </p>
+    </section>
+        <footer>
+            <div class="footer-contacto">
+                <h3 class="texto-pie">Curso Full Stack Python</h3>
+                <!-- ICONOS DE REDES SOCIALES -->
+                <a href="#" class="social-icon"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-icon"><img src="img/logo_instagram.png" alt="instagram"></a>
+                <!-- FIN DE ICONOS DE REDES SOCIALES -->
+            </div>
+            
+            <div class="footer-info">
+                <!-- Información de contacto -->
+                <p>Dirección: Calle Principal, Ciudad</p>
+                <p>Teléfono: +123456789</p>
+                <p>Correo Electrónico: info@ejemplo.com</p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="https://kit.fontawesome.com/b75777cf68.js" crossorigin="anonymous"></script>
+</body>
+</html>
