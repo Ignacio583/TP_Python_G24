@@ -1,0 +1,377 @@
+
+
+
+/*fuente texto*/
+@font-face {
+    font-family:BebasNeue;
+    src: url(../Fonts/BebasNeue-Regular.ttf);
+
+}
+/*fuente titulos*/
+@font-face {
+    font-family:DMSerif;
+    src: url(../Fonts/DMSerifDisplay-Regular.ttf);
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:  #FFF5E0;
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #141E46;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el encabezado */
+header:hover {
+    background-color: #FFF5E0;
+}
+
+/* Contenedor principal con ancho máximo y centrado en la página */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+   
+
+}
+
+/* Estilos para el título principal */
+h1 {
+    padding-left: 6px;
+    font-family:DMSerif;
+    display: inline;
+    font-size: 20px;
+    color: #FF6969;
+}
+
+/* Estilos para la navegación */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilos para la lista no ordenada dentro de la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista dentro de la navegación */
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/* Estilos para el menú "Marcas" y su submenú */
+.menu-marcas {
+    position: relative;
+}
+
+/* Estilos para el submenú "Marcas" (oculto por defecto) */
+.submenu-marcas {
+    display: none;
+    /* Oculta el submenú por defecto */
+    position: absolute;
+    /* Establece una posición absoluta para el submenú */
+    top: 100%;
+    /* Coloca el submenú debajo del elemento "Marcas" */
+    left: 0;
+    /* Alinea el submenú con la izquierda del elemento padre */
+    background-color: #FFF5E0;
+    /* Cambia el fondo del submenú */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra al submenú */
+    z-index: 1;
+    /* Asegura que el submenú esté encima de otros elementos */
+    white-space: nowrap;
+    /* Evita el salto de línea dentro del submenú */
+    text-align: start;
+    /*pone el texto al medio del menu y no a la derecha*/
+
+}
+
+/* Mostrar el submenú "Marcas" al pasar el cursor sobre el menú */
+
+/* Mostrar el submenú "Marcas" al pasar el cursor sobre el menú */
+.menu-marcas:hover .submenu-marcas {
+    display: flex;
+    /* Utiliza flexbox para mostrar los elementos en una columna */
+    flex-direction: column;
+    /* Muestra los elementos en una columna */
+}
+
+
+/* Estilos para los enlaces (links) */
+a {
+    font-family:DMSerif;
+    text-decoration: none;
+    color: #FF6969;
+    font-weight: bold;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 200px;
+    float: left;
+}
+
+/* Estilos para los campos del formulario */
+.contacto {
+    background-color: #FFF5E0; /* Color de fondo de la sección */
+    padding: 40px 0; /* Espaciado interno de la sección */
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contacto label, .contacto input, .contacto textarea {
+   
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el pie de página */
+footer {
+   margin-top: 140px;
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    text-align: center;
+    padding: 20px; /* Ajusta el espaciado interno según tus preferencias */
+  }
+  
+  /* Estilo para el título del pie de página */
+  .texto-pie {
+    font-size: 24px; /* Cambia el tamaño de fuente según tus preferencias */
+    margin-bottom: 10px; /* Ajusta el margen inferior según tus preferencias */
+  }
+  
+  /* Estilo para los iconos de redes sociales */
+  .fa-brands {
+    font-size: 5vw; /* Tamaño de fuente de los íconos */
+    margin: 0 10px; /* Ajusta el margen entre los íconos*/
+    color: #fff; /* Cambia el color de los íconos*/
+  }
+  
+  /* Estilo para la imagen de Instagram */
+  footer img {
+    width: 5vw; /* Ancho de la imagen */
+    margin: 0 10px; /* Ajustar el margen entre la imagen y los íconos*/
+  }
+  
+  footer img:hover{
+    transform: scale(1.05);
+  }
+  /* Cambiar el color de los íconos cuando se les pasa el mouse por encima */
+  .fa-brands:hover {
+    color: #007bff;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px; /* Ajusta el espacio del encabezado en pantallas pequeñas */
+    }
+
+    /* Estilo para el logo en dispositivos móviles */
+    .logo img {
+        width: 150px; /* Reduzca el tamaño del logo en pantallas pequeñas */
+    }
+
+    /* Alinea el título principal y la navegación en dispositivos móviles */
+    h1, nav {
+        text-align: center;
+    }
+
+    /* Estilos para los elementos de la lista en dispositivos móviles */
+    nav li {
+        display: block; /* Muestra los elementos de la lista en bloques */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-top: 10px; /* Agrega espacio superior entre elementos */
+    }
+
+    /* Estilos para el menú "Marcas" en dispositivos móviles */
+    .menu-marcas:hover .submenu-marcas {
+        display: none; /* Oculta el submenú en dispositivos móviles */
+    }
+}
+
+/* Estilo para las imágenes de las marcas en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .marca-img {
+        width: 100%; /* Hace que las imágenes ocupen el ancho completo */
+        height: auto; /* Mantiene la proporción de aspecto */
+    }
+}
+
+/* Estilo para el pie de página en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .footer-contacto {
+        
+        text-align: center; /* Alinea el contenido al centro */
+    }
+}
+
+
+main{
+
+ position: relative;
+ top: 150px;
+ padding-bottom: 150px;
+
+
+}
+.datoscontacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; color: #141E46;
+    position: relative;
+  
+
+  
+  
+}
+fieldset{
+    text-align: center;
+    margin-left: 100px
+    ;
+    border: 10px solid #141E46;
+    border-radius: 10px;
+    border-width: 5px;
+    min-width: 200px;
+}
+legend{
+    font-family:DMSerif;
+    text-align: center;
+    font-size:medium
+}
+.inputcontacto{
+    width: 90%;
+    background:none;
+    color: #333;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #141E46;
+    }
+
+.textodato{
+    text-align: justify;
+    font-size: small;
+
+
+}
+
+.moti{
+    text-align: justify;
+    font-size: small;
+    margin-top: 10%;
+    display: flex;
+}
+
+.motiv {
+   cursor: pointer;
+  
+}
+
+hr{
+    border: none;
+}
+textarea{
+    border: 5px solid #141E46;
+    border-radius: 10px;
+    background:  #141e461f;
+    font-size: large;
+}
+
+.mensaje{
+    position: flex;
+  margin-left: 7vh
+;
+margin-right: 4vh;
+
+}
+
+
+@media screen and (max-width: 768px){  
+    .container{
+
+        display: grid;
+    
+    
+    }
+.menu-marcas:hover .submenu-marcas {
+    padding-left: 20px;
+    height: 120px;
+  width: 120px;
+        display: grid;
+        flex-direction: column;
+    }
+footer{ display: flex ;
+padding-left: 5vh;
+}
+.footer-info {
+    margin-left: 2vh;
+ font-size: 85%;
+}
+textarea{
+    margin-right: 100px;
+    height: 150px;
+}
+
+.footer-contacto{
+    margin-bottom: 2vh;
+}
+  main {
+  margin-top: 6vh;
+  margin-right: 10%;
+  }
+    .mensaje {
+        margin-top: 2vh;
+        align-items: center;
+        margin-left: 30%;
+    }    
+    }
+label{font-family:BebasNeue;
+font-size: 15px;}
+/*elimina las flechas del formulario tipo numero*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
