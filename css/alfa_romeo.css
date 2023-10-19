@@ -585,4 +585,13 @@ hr{
 .carousel{
     margin-left: 0%;
     margin-right: 0%;}
+  .menu-marcas:hover .submenu-marcas {
+            padding-left: 20px;
+            height: 120px;
+            width: 120px;
+                display: grid;
+                flex-direction: column;
+            }  
+    
+	
     }
