@@ -341,8 +341,8 @@ margin-right: 4vh;
         display: grid;
         flex-direction: column;
     }
-footer{ display: flex ;
-padding-left: 5vh;
+footer{ 
+    display: flex ;
 }
 .footer-info {
     margin-left: 2vh;
