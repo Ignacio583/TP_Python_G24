@@ -14,7 +14,7 @@ body {
     /* Elimina los márgenes predeterminados del cuerpo */
     padding: 0;
     /* Elimina el relleno predeterminado del cuerpo */
-
+    background-color: #FFF5E0;
     font-size: 16px;
 }
 
