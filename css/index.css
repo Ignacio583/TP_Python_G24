@@ -471,3 +471,14 @@ a{
 .texto_chico{ 
     font-size: 5px
 }
+/*eliminar el margen cuando este en el celular*/
+@media screen and (max-width: 768px){   
+.carousell {
+        margin-left: 0%;
+        margin-right: 0%;
+
+}
+.carousel{
+    margin-left: 0%;
+    margin-right: 0%;}
+    }
