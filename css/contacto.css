@@ -116,6 +116,7 @@ nav li {
     /* Muestra los elementos en una columna */
 }
 
+
 /* Estilos para los enlaces (links) */
 a {
     font-family:DMSerif;
@@ -333,8 +334,15 @@ margin-right: 4vh;
     
     
     }
-footer{ display: flex ;
-padding-left: 5vh;
+.menu-marcas:hover .submenu-marcas {
+    padding-left: 20px;
+    height: 120px;
+  width: 120px;
+        display: grid;
+        flex-direction: column;
+    }
+footer{ 
+    display: flex ;
 }
 .footer-info {
     margin-left: 2vh;
@@ -360,3 +368,10 @@ textarea{
     }
 label{font-family:BebasNeue;
 font-size: 15px;}
+/*elimina las flechas del formulario tipo numero*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

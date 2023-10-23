@@ -14,7 +14,7 @@ body {
     /* Elimina los márgenes predeterminados del cuerpo */
     padding: 0;
     /* Elimina el relleno predeterminado del cuerpo */
-
+    background-color: #FFF5E0;
     font-size: 16px;
 }
 
@@ -24,7 +24,7 @@ body {
 header {
     background-color: #141E46;
     /* Color de fondo del encabezado */
-    padding: 10px 0;
+    padding: 20px 0;
     /* Aumenta el espacio superior e inferior del encabezado */
     text-align: center;
     /* Alinea el contenido del encabezado al centro */
@@ -471,3 +471,24 @@ a{
 .texto_chico{ 
     font-size: 5px
 }
+/*eliminar el margen cuando este en el celular*/
+@media screen and (max-width: 768px){   
+.carousell {
+        margin-left: 0%;
+        margin-right: 0%;
+
+}
+.carousel{
+    margin-left: 0%;
+    margin-right: 0%;}
+	
+.menu-marcas:hover .submenu-marcas {
+            padding-left: 20px;
+            height: 120px;
+            width: 120px;
+                display: grid;
+                flex-direction: column;
+            }  
+    
+	
+    }

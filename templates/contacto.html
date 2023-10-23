@@ -6,6 +6,7 @@
     <title>El estilo de Vivir</title>
     <link rel="icon" href="/img/icono.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/contacto.css">
+    <script src="../js/contacto.js"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
     </header>
 
 <main>
-    <form action="https://formspree.io/f/xoqoyvpq" method="post">
+  <form name = "miForm" action = "https://formspree.io/f/xoqoyvpq" onsubmit = "return ValidarFormulario();" method="POST">
  <section class="container">
     <div class="datoscontacto">
         <fieldset>
@@ -47,27 +48,31 @@
 
                         <div>
                             <label for="nombre">Nombre:</label>
-                            <input class="inputcontacto" type="text" name="nombre" id="nombre">
+                            <input class="inputcontacto" type="text" name="nombre">
                         </div>
 
                         <div>
                             <label for="apellido">Apellido:</label>
-                            <input class="inputcontacto" type="text" name="apellido" id="apellido">
+                            <input class="inputcontacto" type="text" name="apellido" id="apellido" >
                         </div>
 
                         <div>
                             <label for="telefono">Teléfono:</label>
-                            <input class="inputcontacto" type="tel" name="telefono" id="telefono">
+                            <input class="inputcontacto" type="number" name="telefono" id="telefono">
                         </div>
 
                         <div>
                             <label for="email">Correo:</label>
-                            <input class="inputcontacto" type="email" name="email" id="email">
+                            <input class="inputcontacto" type="email" name="email" id="email" >
                         </div>
     
         </div>
+     
         <div>
+            <div id = "info"></div>
+            
                         </fieldset>
+                       
         <fieldset class="moti">
                             <legend><b>Motivo de contacto</b></legend>
       
@@ -92,10 +97,46 @@
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar">
             </div>
+           
        
     </div>
  </section>
 </form>
+<script type="text/javascript">
+    function ValidarFormulario()
+    {
+        var texto;
+        var usuario = document.forms["miForm"]["nombre"].value;
+
+        if(usuario == null || usuario == ""){
+            texto = "<span style = 'color:red;'> *Ingrese su nombre*";
+            document.getElementById("info").innerHTML = texto;return false;
+        }
+
+        var texto;
+        var usuario = document.forms["miForm"]["apellido"].value;
+
+        if(usuario == null || usuario == ""){
+            texto = "<span style = 'color:red;'> *Ingrese su apellido*";
+            document.getElementById("info").innerHTML = texto;return false;
+        }
+        var texto;
+        var usuario = document.forms["miForm"]["telefono"].value;
+
+        if(usuario == null || usuario == ""){
+            texto = "<span style = 'color:red;'> *Ingrese su telefono*";
+            document.getElementById("info").innerHTML = texto;return false;
+        }
+        var texto;
+        var usuario = document.forms["miForm"]["email"].value;
+
+        if(usuario == null || usuario == ""){
+            texto = "<span style = 'color:red;'> *Ingrese su email*";
+            document.getElementById("info").innerHTML = texto;return false;
+        }
+        
+    }
+</script>
 </main>
 
 

@@ -610,3 +610,23 @@ hr {
     text-align: center;
     padding-top: 50px;
 }
+/*eliminar el margen cuando este en el celular*/
+@media screen and (max-width: 768px){   
+.carousell {
+        margin-left: 0%;
+        margin-right: 0%;
+
+}
+.carousel{
+    margin-left: 0%;
+    margin-right: 0%;}
+  .menu-marcas:hover .submenu-marcas {
+            padding-left: 20px;
+            height: 120px;
+            width: 120px;
+                display: grid;
+                flex-direction: column;
+            }  
+    
+	
+    }
