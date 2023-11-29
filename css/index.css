@@ -22,6 +22,7 @@ body {
 
 /* Estilos para el encabezado (header) */
 header {
+
     background-color: #141E46;
     /* Color de fondo del encabezado */
     padding: 20px 0;
@@ -36,10 +37,12 @@ header {
     width: 100%;
     z-index: 100; /* Asegura que el encabezado esté por encima del contenido */
 
+box-shadow: -5px 0px 15px 10px rgba(0, 0, 0, 0.25); 
 }
 
 /* Cambio de color de fondo al pasar el cursor sobre el encabezado */
 header:hover {
+    box-shadow: none;
     background-color: #FFF5E0;
     /* Color de fondo al pasar el cursor */
 }
@@ -93,7 +96,6 @@ nav li {
 /* Estilos para el menú "Marcas" y su submenú */
 .menu-marcas {
 
-   text-align: start;
     position: relative;
     /* Establece una posición relativa para el elemento padre */
 }
@@ -188,10 +190,12 @@ a {
 
 .carousell {
     background-color: #FFF5E0;
+   
 }
 
 
 .carousel {
+    
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -227,17 +231,21 @@ ul.slides input {
 .slide-image {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     opacity: 0;
     transition: all .7s ease-in-out;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    height: auto;
 }   
 
 .slide-image img {
-    width: auto;
+position: center;
+    width: 100%;
+    height: auto;
     min-width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .carousel-controls {
@@ -474,21 +482,37 @@ a{
 /*eliminar el margen cuando este en el celular*/
 @media screen and (max-width: 768px){   
 .carousell {
+ 
         margin-left: 0%;
         margin-right: 0%;
 
 }
 .carousel{
+  
+
     margin-left: 0%;
     margin-right: 0%;}
 	
-.menu-marcas:hover .submenu-marcas {
-            padding-left: 20px;
-            height: 120px;
-            width: 120px;
-                display: grid;
-                flex-direction: column;
-            }  
-    
-	
-    }
+    .menu-marcas:hover .submenu-marcas {
+        padding-left: 20px;
+        height: 120px;
+        width: 120px;
+            display: grid;
+            flex-direction: column;
+        }  
+ ul.slides {
+                padding-top: 10vh;
+                height: 35vh;
+             }
+ ul.slides2 {
+                 height: 35vh;
+             }
+.marcas .container{
+    padding-top: 20%;
+    justify-content: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    display: grid;
+}
+
+}
